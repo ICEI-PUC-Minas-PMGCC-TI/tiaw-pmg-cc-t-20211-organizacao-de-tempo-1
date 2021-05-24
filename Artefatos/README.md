@@ -16,4 +16,5 @@ Pode-se também criar um diretório "canvas", que seria descrito da seguinte for
 Assim, sucessivamente para outros artefatos como `processos` e `DER`, etc.
 
 * `/Artefato 8 - Plano de Testes de Software`
-*       Plano de testes de software identificando os casos de testes a serem feitos pela equipe, apontando as funcionalidades, as operações e os resultados esperados.
+*       Plano de testes de software identificando os casos de testes a serem feitos pela equipe, 
+*        apontando as funcionalidades, as operações e os resultados esperados.
