@@ -1,0 +1,97 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*Fim fonte*/
+
+
+/* Parte de cima*/
+header {
+    height: 50px;
+    background-color: rgb(169, 150, 253);
+
+}
+
+.menu-principal > ul > li {
+    display: inline-block;
+    padding: 8px
+}
+
+.menu-principal > ul > li:hover {
+    background-color: rgb(237, 209, 243);
+}
+
+.Criarconta {
+    float: right;
+}
+/* fim de cima*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(220, 209, 245);
+    font-weight: 500;
+    min-height: 100vh;
+
+}
+
+main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main h1{
+    color: black;
+    font-size: 48px;
+    margin-bottom: 48px;
+    
+}
+
+main.social-media {
+    display:flex;
+    align-content: center;
+
+
+}
+
+main.social-media a{
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 48px;
+
+}
+
+main.social-media a:first-child img {
+    margin-left: 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main form label span {
+    font-size: 18px;
+}
+
+main form input {
+    background: black;
+    width: 300px;
+    height: 50px;
+}

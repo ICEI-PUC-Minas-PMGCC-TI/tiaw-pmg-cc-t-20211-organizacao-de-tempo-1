@@ -1,0 +1,101 @@
+/* fonte */
+
+/*Fim fonte*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Parte de cima*/
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 30px 8%;
+    background-color: rgb(169, 150, 253);
+}
+
+.logo a {
+    font-size: 20px;
+
+    padding: 0;
+}
+
+
+
+
+.menu-principal > ul > li {
+    display: inline-block;
+    padding: 8px;
+}
+
+
+.Criarconta {
+    float: right;
+}
+
+/* Corpo */
+body {
+    background: rgb(220, 209, 245);
+
+}
+
+.produto-imagem {
+    width: 500px;
+    float: left;
+    padding: 0 10px;
+    font-size: 25px;
+
+    
+
+}
+
+.produto-imagem > img {
+    width: 300px;
+}
+/* BOTAO */
+.btn {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-green {
+    background:green;
+    color: #fff;
+    box-shadow:0 5px #006000;
+}
+.btn-green:hover {
+    background:#006000;
+    color: #fff;
+    box-shadow:0 5px #003f00;
+}
+
+.btn-green:active {
+    position:relative;
+    top: 5px;
+    box-shadow:none;
+}
+
+/*fim botao */
+
+
+/*Parte de baixo */
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(84, 149, 247);
+    height: 150px;
+    padding: 30px;
+}
+
+
+
