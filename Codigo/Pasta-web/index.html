@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrões Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dbfake.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="menu-principal">
+            <ul>
+                <li class="logo">
+                    <a>Projeto Incrivel</a>
+                </li>
+                <li><a href="index.html"class="btn btn-green">Home</a></li>
+                <li><a href="Calêndario.html"class="btn btn-green">Calêndario</a></li>
+                <li><a href="#"class="btn btn-green">Tutoriais</a></li>
+                <li><a href="#"class="btn btn-green">Contatos</a></li>
+                <li class="Criarconta"><a href="criarconta.html"class="btn btn-green">Criar Conta</a></li>
+                <a href="Login.html" class="btn btn-green">Login</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1></h1>
+        <div id="lista-produtos">
+
+
+        </div>
+    </main>
+
+
+
+    <!--Rodapé-->
+    <footer>
+        <section>
+            <div class="container">
+                <ul>
+                    <li class="grid-8">
+                        <h2>A empresa</h2>
+                        <p> <br> Empresa compentente sempre em busca de melhorar os nossos serviços e satisfazer os nossos
+                            clientes com um trabalho e prestação de
+                            serviços.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+    <!--Java-->
+    <script>
+        var prods = ' ';
+        for (i = 0; i < db.dados.length; i++) {
+            prods += `<p class="produto-imagem"> ${db.dados[i].titulo1} <br> <img src="${db.dados[i].imagem1}"></p>`;
+
+        }
+        document.getElementById('lista-produtos').innerHTML = prods;
+
+    </script>
+
+</body>
+
+</html>
