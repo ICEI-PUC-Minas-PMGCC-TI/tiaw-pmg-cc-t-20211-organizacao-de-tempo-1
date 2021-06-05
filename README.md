@@ -1,12 +1,12 @@
-# Nome do projeto
+# Projeto Incrível
 
 Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
 * Gustavo Ferreira Rocha
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Bruno Zaque de Paula Saldanha
+* Bernardo Fernandes Cordeiro
 
 ## Professores responsáveis
 
