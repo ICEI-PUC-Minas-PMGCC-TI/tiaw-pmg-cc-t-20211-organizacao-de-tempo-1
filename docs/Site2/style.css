@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo {
+    color: #16507b;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.menu {
+    width: 80%;
+    text-align: right;
+}
+
+.menu a {
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    /*transition: 0.5s;*/
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.menu .btn-menu {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 7px;
+}
+
+.menu .btn-menu:hover {
+    background-color: #124265;
+    color: white;
+}
+
+
+/*
+Section main
+*/
+
+section.main {
+    background-image: url(Imagens/Fundo-main.jpg);
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main__cta {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main__cta h2 {
+    color: #16507b;
+    font-size: 40px;
+}
+
+.main__cta p {
+    color: grey;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.main__cta button {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+.main__cta button a {
+    background-color: #007bff;
+    display: inline-block;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single {
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.diferencial-single i {
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h2 {
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferencial-single h2 a {
+    text-decoration: none;
+}
+
+.diferencial-single p {
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+section.sobre {
+    padding: 80px 0;
+}
+
+.chamada-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2 {
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p {
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+
+.menu-items {
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: none;
+}
+
+.menu-items.show {
+    display: block;
+}
+
+.menu-items.hide {
+    display: none;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* Get started */
+
+section.criarconta {
+    background-image: url(Imagens/Fundo-main.jpg);
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    margin: 0px 0;
+}
+
+.criarconta form {
+    width: 100%;
+    padding: 20px;
+}
+
+.criarconta form h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.criarconta form label {
+    display: block;
+}
+
+.criarconta form input[type=text],
+.criarconta form input[type=email],
+.criarconta form input[type=password] {
+    width: 30%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.criarconta form input[type=submit] {
+    width: 8%;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: 0;
+}
+
+
+/* error and succes message */
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ff8093;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSucces {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+
+/*Afazeres*/
+
+section.to-dolist {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.conteudoafazeres {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 55px;
+    border-radius: 12px;
+    background-color: rgb(134, 134, 134);
+}
+
+.topoafazeres {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.topoafazeres input {
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: #191818;
+    color: white;
+}
+
+.topoafazeres button {
+    width: 60px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: #fff;
+    outline: none;
+}
+
+.topoafazeres button:hover {
+    background: #1f1e1e;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: #191818;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.btnAcaoAfazeres {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #2b2a2a;
+    color: white;
+    outline: none;
+}
+
+.btnAcaoAfazeres:hover {
+    background: #3c3a3a;
+    transition: 0.5s;
+}
+
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background: #2d2c2c;
+    color: white;
+    cursor: pointer;
+}
+
+.formeditarexcluir {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+.frm-linha input {
+    padding: 7px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: #2d2c2c;
+    color: white;
+}
+
+.frm-linha button {
+    background: #2d2c2c;
+    border: 1px solid #191818;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm-linha button:hover {
+    background: #3c3a3a;
+}
+
+/* Horarios */
+
+#tela {
+    background-color: lightgray;
+}
+
+/* daw */
+
+@media screen and (max-width: 768px) {
+    .diferencial-single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre p {
+        width: 100%;
+        margin: 20px 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 20%;
+    }
+    .menu-mobile {
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i {
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 19px;
+    }
+    .criarconta {
+        display: block;
+        margin: 20px 20px;
+        height: 50%;
+    }
+}
