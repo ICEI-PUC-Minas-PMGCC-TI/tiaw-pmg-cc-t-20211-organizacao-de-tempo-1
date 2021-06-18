@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Projeto Incrivel</h2>
+            </div>
+            <!--Logo-->
+            <div class="menu">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="#">
+                    Sobre
+                </a>
+                <a href="#">
+                    Contato
+                </a>
+                <a class="btn-menu" href="getstarted.html">
+                    Get Started
+                </a>
+            </div>
+            <!--Menu-->
+            <div class="menu-mobile">
+                <i class="fas fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="index.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contatos</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <!--Menu-items-->
+            </div>
+            <!--Menu-mobile-->
+        </div>
+        <!--Center-->
+    </header>
+
+    <!--FIM DO HEADER/COMEÇO DA LISTA-->
+
+    <section class="to-dolist">
+        <div class="conteudoafazeres">
+            <div class="topoafazeres">
+                <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+                <button id="btnAddTarefa">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <!--Topo-->
+            <ul id="listaTarefas">
+            </ul>
+        </div>
+        <!--conteudo-->
+
+        <div id="janelaEdicao">
+            <button id="janelaEdicaoBtnFechar">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 id="idTarefaEdicao"></h2>
+            <hr>
+            <form class="formeditarexcluir">
+                <div class="frm-linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="inputTarefaNomeEdicao">
+                </div>
+                <!--frm linha 1-->
+                <div class="frm-linha">
+                    <button id="btnAtualizarTarefa">Salvar</button>
+                </div>
+                <!--frm linha 2-->
+            </form>
+        </div>
+        <div id="janelaEdicaoFundo"></div>
+
+    </section>
+    <!--To do list-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--FIM DA LISTA/COMEÇO DA PARTE DE BAIXO-->
+    <section class="sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre o Projeto Incrivel</h2>
+                <p>Texto exemplo</p>
+            </div>
+            <!--chamada-sobre-->
+            <div class="conteudo-sobre">
+                <p>Texto de exemplo</p>
+                <p>Texto de exemplo</p>
+            </div>
+            <!--conteudo-sobre-->
+        </div>
+        <!--center-->
+    </section>
+    <!--Sobre-->
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+    <script>
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click', () => {
+            //Mostrar menu
+            var menuItems = document.querySelector('.menu-items');
+            if (menuItems.classList.contains('show')) {
+                menuItems.classList.add('hide');
+                menuItems.classList.remove('show');
+            } else {
+                menuItems.classList.add('show');
+                menuItems.classList.remove('hide');
+            }
+        });
+    </script>
+
+
+
+    <script src="js/tarefas.js"></script>
+
+</body>
+
+</html>
