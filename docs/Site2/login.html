@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Projeto Incrivel</h2>
+            </div>
+            <!--Logo-->
+            <div class="menu">
+                <a class="btn-menu" href="frontpage.html">
+                    Home
+                </a>
+                <a class="btn-menu" href="#">
+                    Sobre
+                </a>
+
+
+                </a>
+            </div>
+            <!--Menu-->
+            <div class="menu-mobile">
+                <i class="fas fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="index.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Tarefas</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <!--Menu-items-->
+            </div>
+            <!--Menu-mobile-->
+        </div>
+        <!--Center-->
+    </header>
+
+
+    <!--Main-->
+    <section class="bodylogin">
+        <div class="containerlogin">
+            <div class="cardlogin">
+                <h1>Entrar</h1>
+                <div id="msgError"></div>
+
+                <div class="label-floatlogin">
+                    <input type="text" id="usuario" placeholder=" " class="inputlogin" required>
+                    <label id="userlabelLogin" for="usuario">Email</label>
+                </div>
+                <div class="label-floatlogin">
+                    <input type="password" id="senha" placeholder=" " class="inputlogin" required>
+                    <label id="senhalabelLogin" for="usuario">Senha</label>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="justify-centerlogin">
+                    <button onclick='entrar()' class="buttonLogin">Entrar</button>
+                </div>
+                <div class="justify-centerlogin">
+                    <hr class="hrLogin">
+                </div>
+                <p class="pLogin">Não tem uma conta?
+                    <a href="getstarted.html" class="aLogin">Cadastre-se</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Final da pagina-->
+    <section class="sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre o Projeto Incrivel</h2>
+                <p>Um site feito para que os usuários possam organizar de forma prática seus compromissos </p>
+            </div>
+            <!--chamada-sobre-->
+
+            <!--conteudo-sobre-->
+        </div>
+        <!--center-->
+    </section>
+    <!--Sobre-->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+    <script>
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click', () => {
+            //Mostrar menu
+            var menuItems = document.querySelector('.menu-items');
+            if (menuItems.classList.contains('show')) {
+                menuItems.classList.add('hide');
+                menuItems.classList.remove('show');
+            } else {
+                menuItems.classList.add('show');
+                menuItems.classList.remove('hide');
+            }
+        });
+    </script>
+
+
+
+    <script src="js/Cadastrar.js"></script>
+    <script src="js/Login.js"></script>
+
+</body>
+
+</html>
