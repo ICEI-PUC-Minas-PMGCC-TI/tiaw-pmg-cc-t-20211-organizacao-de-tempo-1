@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Projeto Incrivel</h2>
+            </div>
+            <!--Logo-->
+            <div class="menu">
+                <a class="btn-menu" href="frontpage.html">
+                    Home
+                </a>
+                <a class="btn-menu" href="login.html">
+                    Login
+                </a>
+
+            </div>
+            <!--Menu-->
+            <div class="menu-mobile">
+                <i class="fas fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="index.html">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contatos</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <!--Menu-items-->
+            </div>
+            <!--Menu-mobile-->
+        </div>
+        <!--Center-->
+    </header>
+
+    <!--Criar conta-->
+    <section class="criarconta">
+
+        <div class='containerCriar'>
+            <div class='cardCriar'>
+                <h1 class="h1Criar"> Cadastrar </h1>
+
+                <div id='msgError'></div>
+                <div id='msgSuccess'></div>
+
+                <div class="label-floatCriar">
+                    <input type="text" id="nome" placeholder=" " required>
+                    <label id="labelNome" for="nome">Nome</label>
+                </div>
+
+                <div class="label-floatCriar">
+                    <input type="email" id="mail" placeholder=" " required>
+                    <label id="labelEmail" for="mail">E-mail</label>
+                </div>
+
+                <div class="label-floatCriar">
+                    <input type="password" id="senha" placeholder=" " required>
+                    <label id="labelPassword" for="senha">Senha</label>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="label-floatCriar">
+                    <input type="password" id="confirmSenha" placeholder=" " required>
+                    <label id="labelConfirmarPassword" for="senha">Confirmar Senha</label>
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+
+                <div class='justify-centerCriar'>
+                    <input onclick='cadastrar()' type="submit" name="acao" value="Cadastrar" class="buttonCriar" />
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--Criar conta-->
+
+
+
+
+    <section class="sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre o Projeto Incrivel</h2>
+                <p>Um site feito para que os usuários possam organizar de forma prática seus compromissos </p>
+            </div>
+            <!--chamada-sobre-->
+            <div class="conteudo-sobre">
+
+
+            </div>
+            <!--conteudo-sobre-->
+        </div>
+        <!--center-->
+    </section>
+    <!--Sobre-->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/9fe51ddcfd.js" crossorigin="anonymous"></script>
+    <script>
+        var el = document.querySelector('.menu-mobile-icon');
+
+        el.addEventListener('click', () => {
+            //Mostrar menu
+            var menuItems = document.querySelector('.menu-items');
+            if (menuItems.classList.contains('show')) {
+                menuItems.classList.add('hide');
+                menuItems.classList.remove('show');
+            } else {
+                menuItems.classList.add('show');
+                menuItems.classList.remove('hide');
+            }
+        });
+    </script>
+
+
+
+    <script src="js/Cadastrar.js"></script>
+
+</body>
+
+</html>
